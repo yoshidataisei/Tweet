@@ -14,19 +14,19 @@
       <div class="new_user">
           <div class="form-group">
           <%= f.label :name, "名前" %>
-          <%= f.text_field :name, class: "form-control" %>
+          <%= f.text_field :name, placeholder: "user_name", class: "form-control" %>
       </div>
       <div class="form-group">
           <%= f.label :email, "Eメール" %>
-          <%= f.email_field :email, class: "form-control" %>
+          <%= f.email_field :email, placeholder: "email", class: "form-control" %>
       </div>
       <div class="form-group">
           <%= f.label :password, "パスワード" %>
-          <%= f.password_field :password, class: "form-control" %>
+          <%= f.password_field :password, placeholder: "password", class: "form-control" %>
       </div>
       <div class="form-group">
           <%= f.label :password_confirmation, "確認" %>
-          <%= f.password_field :password_confirmation, class: "form-control" %>
+          <%= f.password_field :password_confirmation, placeholder: "confirmation", class: "form-control" %>
       </div>
       <div class="form-group">
       <%= link_to "アカウント作成済みの方", login_path %>

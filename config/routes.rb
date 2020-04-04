@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-  resources :puts
-  resources :users, only: [:index, :new, :show, :create]
+  resources :puts, only: [:index, :new, :show, :create] 
+    
+    
+  
+  resources :users, only: [:index, :new, :show, :create] do
+    resources :puts
+  end
   
   
   get "login", to: "sessions#new"

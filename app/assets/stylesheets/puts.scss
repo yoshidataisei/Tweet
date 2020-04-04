@@ -3,18 +3,74 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 span {
-    margin-right:100px;
+    margin: 0px 20px 20px 0px;
+   
 }
 
 .title-body {
   background: #dfefff;
   box-shadow: 0px 0px 0px 5px #dfefff;
   border: dashed 2px white;
-  padding: 0.2em 0.5em;
-  margin-top:30px 
+  padding:0px;
+  text-align:center;
+  font-size:20px;
+  
+  
 }
 
 .puts-title {
   border-bottom:5px solid red;
   margin-top:50px;
+}
+
+.new_form {
+  margin-top:130px;
+  border-bottom:5px solid red;
+}
+
+.body-2 {
+  margin-bottom:30px;
+}
+
+.btn-1 {
+  position: relative;
+  display: inline-block;
+  padding: 15px ;
+  text-decoration: none;
+  color: #FFF;
+  background: #fd9535;/*背景色*/
+  border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
+  border-radius: 4px;/*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+  margin-top:20px;
+}
+
+.btn-1 {
+  border-bottom: solid 2px #fd9535;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+.btn-2 {
+  position: relative;
+  display: inline-block;
+  padding: 15px ;
+  text-decoration: none;
+  color: #FFF;
+  background: #fd9535;/*背景色*/
+  border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
+  border-radius: 4px;/*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+  margin-top:30px;
+}
+
+.btn-2 {
+  border-bottom: solid 2px #fd9535;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+
+.new_btn li {
+  display:inline;
 }
