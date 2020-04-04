@@ -1,16 +1,25 @@
+<% if logged_in? %>
+
+<p>ログイン完了ユーザー<%= current_user.name %></p>
+<p><%= link_to "質問内容一覧をみる", puts_path %></p>
+<p><%= link_to "質問を投稿する", "#" %></p>
+
+<% else %>
 <nav class="navbar navbar-dark bg-dark">
   <a class="navbar-brand" href="/">Tweet</a>
   <form class="form-inline">
-    <a class="btn btn-primary" href="#" role="button">ログインする</a>
+    <%= link_to "ログインする", login_path, class: "btn btn-primary" %>
   </form>
 </nav>
 
 <div class= "toppage">
     <h1 class="toppage-h1">Tweet</h1>
-    <p class="toppages-p">Tweeは、普段の生活の中で、疑問に思ったことなどをTweetし、その事柄に対して、<br>
+    <p class="toppages-p">Tweetは、普段の生活の中で、疑問に思ったことなどをTweetし、その事柄に対して、<br>
     知識のある方が答え、問題の解消を行うサービスです。
     </p>
 </div>
 
-<a href="#" class="btn-gradient-3d-orange">アカウント作成</a>
+<%= link_to "アカウント作成", new_user_path, class: "btn-gradient-3d-orange" %>
+<% end %>
+
 

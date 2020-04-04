@@ -1,0 +1,20 @@
+<nav class="navbar navbar-dark bg-dark">
+  <%= link_to "Tweet", puts_path, class:"pathnavbar-brand" %>
+  <form class="form-inline">
+    <%= link_to "ログアウト", logout_path, method: :delete, class: "btn btn-primary" %>
+  </form>
+</nav>
+<h1 class= "puts-title">投稿内容</h1>
+
+
+<% @puts.each do |put| %>
+<ul class="title-body">
+ 　  <li><span>タイトル:</span>　<%= put.title %></li>
+    <li><span>内容：</span><%= put.body %></li>
+</ul>
+<% end %>
+
+<%= paginate @puts %>
+
+
+

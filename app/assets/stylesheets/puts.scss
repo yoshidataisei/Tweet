@@ -1,0 +1,20 @@
+// Place all the styles related to the Puts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+span {
+    margin-right:100px;
+}
+
+.title-body {
+  background: #dfefff;
+  box-shadow: 0px 0px 0px 5px #dfefff;
+  border: dashed 2px white;
+  padding: 0.2em 0.5em;
+  margin-top:30px 
+}
+
+.puts-title {
+  border-bottom:5px solid red;
+  margin-top:50px;
+}
