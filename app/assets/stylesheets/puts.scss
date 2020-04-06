@@ -92,3 +92,48 @@ span {
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
   border-bottom: none;
 }
+
+.show_title {
+  border-bottom:5px solid red;
+  margin-top:100px;
+}
+
+.show_problem{
+  display:inline;
+}
+
+.h2_title {
+  margin-top:40px;
+  border-bottom:5px solid red;
+  
+}
+
+.ol {
+  list-style:none;
+}
+
+.form_control-1-1 {
+  width: 440px;
+  height: 60px;
+  margin-top:100px;
+}
+
+.form_control-2-2 {
+  width: 440px;
+  height: 60px;
+  margin-left:auto;
+  margin-right:30px;
+  margin-top:30px;
+}
+
+.form_control-3-3 {
+  width: 600px;
+  height: 100px;
+  margin-top:30px;
+}
+
+.form_control-1-4 {
+  width: 600px;
+  height: 100px;
+  margin-top:30px;
+}

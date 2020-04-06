@@ -1,8 +1,11 @@
 <% if logged_in? %>
 
-<p>ログイン完了ユーザー<%= current_user.name %></p>
-<p><%= link_to "質問内容一覧をみる", puts_path %></p>
-<p><%= link_to "質問を投稿する", new_put_path %></p>
+<p class="logged_in">ログイン完了ユーザー<%= current_user.name %></p>
+<ul class= "logged_in_link">
+  <li><%= link_to "質問内容一覧をみる", puts_path %></li>
+  <li><%= link_to "質問を投稿する", new_put_path %></li>
+</ul>
+
 
 <% else %>
 <nav class="navbar navbar-dark bg-dark">
