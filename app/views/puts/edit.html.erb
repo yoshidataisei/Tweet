@@ -1,0 +1,23 @@
+<nav class="navbar navbar-dark bg-dark">
+  <%= link_to "Tweet", puts_path, class:"pathnavbar-brand" %>
+</nav>
+
+<h1 class="new_form">編集フォーム</h1>
+
+<%= form_for @put, url: put_path(@put) do |f|  %>
+    <div class="form_group">
+        <%= f.label :title, "タイトル:" %>
+        <%= f.text_field :title, placeholder: "title", class: "form_control-1" %>
+    </div>
+    <div class="form_group">
+        <%= f.label :body, "内容:" %>
+        <%= f.text_area :body, placeholder: "Contents of question", class: "form_control-2" %>
+    </div>
+
+<ul class="new_btn">
+    <li><%= f.submit "送信", class: "btn-1 btn_black-1" %></li>
+    
+    <li><%= link_to "戻る", puts_path, class: "btn-2 btn_black-2" %></li>
+</ul>
+    
+<% end %>

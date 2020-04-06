@@ -5,16 +5,21 @@
   </form>
 </nav>
 <h1 class= "puts-title">投稿内容</h1>
-<p><%= link_to "質問を投稿する", new_put_path, class: "btn-1" %></p>
 
+<p><%= link_to "質問を投稿する", new_put_path, class: "btn-1" %></p>
 
 <% @puts.each do |put| %>
 <ul class="title-body">
     <li>質問</li>
-     <li><span>名前:</span><%= @put.user.name %></li>
- 　  <li><span>タイトル:</span><%=link_to put.title, put_path(put) %></li>
+     <li><span>名前:</span><%= put.username%></li>
+ 　  <li><span>タイトル:</span><%= put.title %></li>
+ 　  <li><span>内容:</span><%= put.body %></li>
+ 　  <%=link_to "⬆️質問に答える", put_path(put) %>
+ 　  
 </ul>
 <% end %>
+ 
+
 
 <%= paginate @puts %>
 

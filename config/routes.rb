@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  resources :puts, only: [:index, :new, :show, :create] 
-    
-    
+
+  resources :puts do
+    resources :problems
+  end
   
   resources :users, only: [:index, :new, :show, :create] do
     resources :puts

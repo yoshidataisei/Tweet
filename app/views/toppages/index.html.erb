@@ -2,7 +2,7 @@
 
 <p>ログイン完了ユーザー<%= current_user.name %></p>
 <p><%= link_to "質問内容一覧をみる", puts_path %></p>
-<p><%= link_to "質問を投稿する", "#" %></p>
+<p><%= link_to "質問を投稿する", new_put_path %></p>
 
 <% else %>
 <nav class="navbar navbar-dark bg-dark">

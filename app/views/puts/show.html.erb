@@ -1,10 +1,35 @@
 <nav class="navbar navbar-dark bg-dark">
   <%= link_to "Tweet", puts_path, class:"pathnavbar-brand" %>
 </nav>
-<h1>質問内容詳細</h1>
+<h1>質問詳細</h1>
 
 <ul>
-    <li><%= @put.title %></li>
-    <li><%= @put.body %></li>
-
+    <li>タイトル：<%= @put.title %></li>
+    <li>内容：<%= @put.body %></li>
 </ul>
+
+<h2>質問に答える</h2>
+<% if @put.problems.any? %>
+
+
+<% @put.problems.each do |put| %>
+<ul>
+<li><%= put.content %></li>
+</ul>
+<% end %>
+<% end %>
+
+<%= form_for ([@put, @put.problems.build]) do |f|  %>
+    
+    <div class="form_group">
+        <i class="fas fa-user"></i><%= f.label :content, "名前:" %>
+        <%= f.text_field :content, placeholder: "質問に答える", class: "form_control-1" %>
+    </div>
+
+<ul class="new_btn">
+    <li><%= f.submit "回答を投稿する", class: "btn-1 btn_black-1" %></li>
+    
+    <li><%= link_to "戻る", puts_path, class: "btn-2 btn_black-2" %></li>
+</ul>
+
+<% end %>
